@@ -12,15 +12,6 @@
   background:#002676;
   color:#fff;
 }
-.office-hours-hero::after{
-  content:"";
-  position:absolute;
-  right:6.5%;
-  bottom:0;
-  width:clamp(140px,22vw,330px);
-  height:10px;
-  background:#fdb515;
-}
 .office-hours-hero .office-hours-wrap{
   padding:clamp(52px,6vw,78px) 0;
 }

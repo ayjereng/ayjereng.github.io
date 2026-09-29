@@ -4,15 +4,6 @@
   background:#002676;
   color:#fff;
 }
-.people-page-hero::after{
-  content:"";
-  position:absolute;
-  right:6.5%;
-  bottom:0;
-  width:clamp(140px,22vw,330px);
-  height:10px;
-  background:#fdb515;
-}
 .people-page-wrap{
   width:min(1200px,calc(100% - 96px));
   margin:0 auto;
