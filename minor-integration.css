@@ -34,11 +34,11 @@
 :is(#main,.entry-content) a:focus-visible{outline:3px solid #fdb515;outline-offset:5px}
 @media(max-width:760px){:is(#main,.entry-content) h2{font-size:27px!important}:is(#main,.entry-content) h3{font-size:21px!important}}
 
-/* Group the motif with the introduction instead of pushing it to the far edge. */
-.hero-inner{display:grid!important;grid-template-columns:minmax(0,730px) minmax(240px,320px);justify-content:start!important;align-items:center!important;column-gap:clamp(40px,5vw,80px)!important}
+/* Keep the motif centered at the three-quarter point of the desktop viewport. */
+.hero-inner{display:grid!important;grid-template-columns:minmax(0,1.22fr) minmax(320px,1fr);justify-content:stretch!important;align-items:center!important;column-gap:clamp(40px,5vw,80px)!important}
 .hero-copy{max-width:730px!important;min-width:0}
 .hero .hero-description{max-width:60ch}
-.population-art{position:static!important;width:100%!important;margin:0!important;gap:30px!important;justify-self:start;align-self:center}
+.population-art{position:static!important;width:min(100%,320px)!important;margin:0!important;gap:30px!important;justify-self:center;align-self:center}
 .pyramid i{height:21px!important;opacity:.43!important}
 #main .section{padding-top:48px!important;padding-bottom:48px!important}
 #main .section-heading{margin-bottom:28px!important}
@@ -52,5 +52,5 @@
 #main .hero .button{background:#fdb515!important;color:#010133!important}
 #main .hero .text-link{color:white!important}
 #main .advising-inner{padding-top:48px!important;padding-bottom:48px!important}
-@media(max-width:1050px){.hero-inner{grid-template-columns:minmax(0,1fr) 240px;column-gap:32px!important}.pyramid i{height:18px!important}}
+@media(max-width:1050px){.hero-inner{grid-template-columns:minmax(0,1fr) 240px;column-gap:32px!important}.population-art{width:240px!important}.pyramid i{height:18px!important}}
 @media(max-width:760px){.hero-inner{display:block!important}.population-art{width:180px!important;margin:28px 0 0!important}.pyramid i{height:13px!important}#main .elective-panel{border-left:0!important;border-top:1px solid #d5d5d5!important;padding:24px 0 0!important}#main .section,#main .advising-inner{padding-top:36px!important;padding-bottom:36px!important}#main .intro-photo{padding-top:36px!important;padding-bottom:36px!important}}
