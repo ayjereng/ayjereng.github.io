@@ -44,3 +44,17 @@
 /* Reference screenshot: content begins approximately 6.5% from either side. */
 #masthead .hcont{width:87%!important;max-width:none!important;margin-left:auto!important;margin-right:auto!important}
 @media(max-width:760px){#masthead .hcont{width:calc(100% - 40px)!important}}
+
+/* Compact Berkeley footer: the gold wordmark shares a row with the footer text. */
+#colophon.site-footer-modern{background:#002676!important;color:#fff!important;border-top:22px solid #fdb515!important;padding:0!important}
+#colophon .footer-modern-inner{width:min(1280px,calc(100% - 80px));margin:0 auto;padding:48px 0 52px;display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,1fr);gap:64px;align-items:center}
+#colophon .footer-brand-block{display:flex;align-items:center;gap:36px;min-width:0}
+#colophon .footer-berkeley-logo{display:block;flex:0 0 230px}
+#colophon .footer-berkeley-logo img{display:block;width:230px!important;max-width:100%!important;height:auto!important}
+#colophon .footer-modern-inner p,#colophon .footer-modern-inner a{margin:0;color:#fff!important;font:400 14px/1.7 Inter,Arial,sans-serif}
+#colophon .footer-modern-inner a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+#colophon .footer-berkeley-logo{text-decoration:none!important}
+#colophon .footer-department-block{text-align:right}
+#colophon .footer-department-block p+p{margin-top:12px}
+@media(max-width:900px){#colophon .footer-modern-inner{grid-template-columns:1fr;gap:34px;align-items:start}#colophon .footer-department-block{text-align:left}}
+@media(max-width:650px){#colophon .footer-modern-inner{width:calc(100% - 40px);padding:38px 0 42px}#colophon .footer-brand-block{align-items:flex-start;flex-direction:column;gap:24px}#colophon .footer-berkeley-logo{flex-basis:auto;width:210px}}
