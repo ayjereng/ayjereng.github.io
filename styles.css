@@ -12,3 +12,23 @@ header{border-top:0;border-bottom:1px solid #f2f2f2}.header-inner{padding:16px 0
 
 /* Clear academic information hierarchy and expandable course options. */
 .intro-photo{grid-template-columns:1fr 1.25fr;gap:56px;padding-bottom:52px;align-items:center}.intro-photo img{aspect-ratio:1.6}.intro-note .inline-link{display:none}.curriculum .section{padding-top:46px}.course-layout{grid-template-columns:1.65fr 1fr}.requirements-summary{margin:18px 0 0}.requirements-summary>div{padding:15px 0;border-bottom:1px solid white}.requirements-summary dt{font-size:14px;color:#002676;font-weight:500}.requirements-summary dd{margin:5px 0 0;font-size:16px;line-height:1.5;color:#010133}.elective-options{margin-top:38px}.elective-options>h3,.faq>h3{font-size:22px;font-weight:500;margin-bottom:12px}.elective-options>p{font-size:16px;margin-bottom:22px}.elective-options details,.faq details{border-top:1px solid #808080}.elective-options details:last-of-type,.faq details:last-of-type{border-bottom:1px solid #808080}summary{cursor:pointer;padding:21px 8px 21px 0;font-size:17px;line-height:1.5;color:#002676}summary:hover{text-decoration:underline;text-underline-offset:4px}summary>span{font-size:14px;margin-right:20px}.elective-course-list{list-style:none;margin:0;padding:0 0 20px 24px}.elective-course-list li{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-top:1px solid #f2f2f2;font-size:16px;line-height:1.5}.elective-course-list strong{display:block;font-size:14px;font-weight:500;margin-bottom:3px}.units{white-space:nowrap;font-size:14px}.elective-options .source-note{font-size:14px;margin-top:16px}.source-note a{text-decoration:underline}.community{padding-top:48px;padding-bottom:48px;grid-template-columns:300px 1fr}.community figure{max-width:300px}.community img{aspect-ratio:1.05}.faq{padding:0 0 48px;max-width:850px}.faq details p{padding:0 24px 22px;max-width:760px;font-size:16px}.requirements-note{max-width:760px}.hero .hero-description{max-width:62ch}#why{scroll-margin-top:28px}@media(max-width:760px){.intro-photo{grid-template-columns:1fr;gap:28px;padding-bottom:35px}.course-layout{grid-template-columns:1fr}.community{grid-template-columns:1fr}.elective-course-list{padding-left:0}summary>span{display:block;margin:0 0 5px}.faq{padding-bottom:36px}.hero .actions{align-items:flex-start}}
+
+/* Administrative completion details retained from the former requirements page. */
+.completion-process{background:#f2f2f2;border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;scroll-margin-top:28px}
+.completion-inner{padding-top:48px;padding-bottom:48px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}
+.completion-intro .eyebrow{margin-bottom:10px;color:#002676}
+.completion-intro h2{font:500 30px/1.25 Inter,Arial,sans-serif;letter-spacing:-.02em}
+.completion-intro>p:not(.eyebrow){margin-top:16px;max-width:52ch}
+.completion-intro .actions{margin-top:24px;gap:22px}
+.completion-intro .button{background:#002676;color:#fff;border-radius:0}
+.completion-intro .button:hover{background:#004aae}
+.completion-steps{margin:0;padding:0 0 0 30px}
+.completion-steps li{padding:0 0 22px 12px;margin-bottom:22px;border-bottom:1px solid #d5d5d5;color:#010133}
+.completion-steps li::marker{color:#002676;font-weight:600}
+.completion-steps strong{display:block;font-size:16px;font-weight:600;line-height:1.45;color:#002676}
+.completion-steps span{display:block;margin-top:6px;font-size:15px;line-height:1.65}
+.completion-note{border-left:3px solid #fdb515;padding-left:20px}
+.completion-note h3{font-size:18px;font-weight:600;margin:0 0 8px}
+.completion-note p{font-size:14px;line-height:1.7}
+@media(max-width:900px){.completion-inner{grid-template-columns:1fr;gap:38px}}
+@media(max-width:760px){.completion-inner{padding-top:36px;padding-bottom:36px}.completion-steps li{padding-left:10px}.completion-intro h2{font-size:27px}}
