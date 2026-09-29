@@ -1,0 +1,75 @@
+.acf-block-preview a {
+    pointer-events: none;
+}
+
+.teamlistz h2.sectiontitle {
+    text-align: center;
+    margin: 20px 0 50px
+}
+
+.teamlistz .profilez {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.teamlistz .profilez a {display:block} 
+.teamlistz .profilez h2 a,
+.teamlistz .profilez p  a {display: inline-flex}
+.teamlistz .profilez img {
+    border-radius: 50%;
+    width: 70%;
+    margin-bottom: 15px;
+    transition: 0.2s outline;
+    outline: 0px inset;
+    will-change: outline;
+}
+
+.teamlistz .profilez .wpel-icon-right i {
+    vertical-align: top;
+}
+
+.teamlistz .profilez a:hover img {
+    outline: 5px inset;
+}
+a.nohover:after {display: none !important;}
+
+.teamlistz .profile h2 {
+    font-size: 2rem
+}
+
+.teamlistz .profilez {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.teamlistz .profile {
+    padding-bottom: 50px;
+}
+
+.teamlistz .profilez.columns_3 .profile {
+    width: 28%;
+}
+
+.teamlistz .profilez.columns_3 .profile img {
+    max-width: 70%;
+    margin: 0 auto
+}
+
+.teamlistz .profilez.columns_4 .profile {
+    width:22%;
+}
+
+.teamlistz .profilez.columns_4 .profile img {
+    max-width: 70%;
+    margin: 0 auto
+}
+
+@media screen and ( max-width: 980px ) {
+    .teamlistz .profilez .profile { width:45% !important; font-size:0.8em}
+}
+
+@media screen and ( max-width: 580px ) {
+    .teamlistz .profilez .profile { width:95% !important;}
+    
+}

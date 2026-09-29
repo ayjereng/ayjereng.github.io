@@ -1,0 +1,6 @@
+/* Shared persistent department navigation. */
+:root{--department-header-height:130px}
+#masthead.site-header{position:sticky!important;top:0;z-index:1000!important;background:#fff!important;box-shadow:0 1px 0 rgba(1,1,51,.12)}
+html{scroll-padding-top:calc(var(--department-header-height) + 20px)!important}
+#masthead .sub-menu{max-height:calc(100dvh - var(--department-header-height) - 20px);overflow-y:auto}
+@media(max-width:650px){#masthead #primary-menu.is-open{max-height:60dvh;overflow-y:auto}#masthead .sub-menu{max-height:none}}

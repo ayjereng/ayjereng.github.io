@@ -1,0 +1,56 @@
+/* Department shell, isolated from the minor's content layout. */
+#masthead{background:white;border-top:6px solid #fdb515;border-bottom:0;position:relative;z-index:10}
+#masthead .hcont{width:min(1280px,calc(100% - 64px));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:36px;min-height:120px}
+#masthead .site-branding{width:360px;max-width:42%;flex-shrink:0}#masthead .custom-logo{display:block;width:100%;height:auto;object-fit:contain}#masthead .site-title,#masthead .site-description{display:none}
+#site-navigation ul{list-style:none;padding:0;margin:0}#primary-menu{display:flex;gap:25px;align-items:center}#site-navigation li{position:relative}#site-navigation a{display:block;padding:12px 0;font-size:17px;font-weight:400;color:#002676}#site-navigation .sub-menu{display:none;position:absolute;top:100%;left:0;width:265px;background:white;border-top:3px solid #fdb515;box-shadow:0 5px 18px #01013320;padding:10px 18px}#site-navigation .sub-menu a{font-size:14px;padding:9px 0;line-height:1.5}#site-navigation li:hover>.sub-menu,#site-navigation li:focus-within>.sub-menu{display:block}#site-navigation .sub-menu .sub-menu{left:100%;top:0}#site-navigation .menu-toggle{display:none}#site-navigation a[aria-current=page]{font-weight:600;text-decoration:underline;text-underline-offset:5px}
+#colophon{display:block;background:#002676;color:white;padding:0;margin:0;width:100%;max-width:none}#colophon .site-info{width:100%}#colophon .kt-row-column-wrap{display:grid}#colophon p,#colophon a{color:white;font-family:Inter,Arial,sans-serif;font-size:14px;line-height:1.7}#colophon .kb-row-layout-wrap{background:#002676;border-top-color:#fdb515!important}#colophon img{height:auto;max-width:230px}#colophon figure{margin:0}#colophon section{margin:0}
+@media(max-width:1050px){#masthead .hcont{flex-wrap:wrap;gap:0;padding:18px 0}#masthead .site-branding{max-width:100%;width:350px}#site-navigation{width:100%}#primary-menu{gap:24px}#site-navigation .sub-menu .sub-menu{left:auto;right:0;position:relative;box-shadow:none}}
+@media(max-width:650px){#masthead .hcont{width:calc(100% - 40px);min-height:90px}#masthead .site-branding{width:310px}#site-navigation .menu-toggle{display:block;background:white;color:#002676;border:1px solid #002676;padding:9px 14px;margin:12px 0;font:14px Inter,Arial,sans-serif}#primary-menu{display:none}#primary-menu.is-open{display:block}#site-navigation .sub-menu{position:static;width:100%;box-shadow:none;border:0;padding:0 0 8px 18px;display:block}#site-navigation a{font-size:16px}#site-navigation .sub-menu .sub-menu{position:static}#colophon .kt-row-column-wrap{grid-template-columns:1fr}#colophon p{text-align:left}}
+
+
+/* Wider page canvas with the original generous hero proportions. */
+.wrap{width:calc(100% - 80px)!important;max-width:1600px!important}
+.hero-inner{padding-top:54px!important;padding-bottom:58px!important}
+.hero h1{font-size:48px!important;line-height:1.16!important}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)!important}.hero-inner{padding-top:36px!important;padding-bottom:40px!important}.hero h1{font-size:35px!important}}
+
+.wrap{width:calc(100% - 80px)!important;max-width:1600px!important;margin-left:auto!important;margin-right:auto!important}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)!important}}
+
+/* Midpoint between the previous 1200px and 1600px desktop layouts. */
+.wrap{width:calc(100% - 88px)!important;max-width:1400px!important}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)!important}}
+
+/* Reference screenshot: content begins approximately 6.5% from either side. */
+.wrap{width:87%!important;max-width:none!important;margin-left:auto!important;margin-right:auto!important}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)!important}}
+
+/* Consistent academic typography, captions, and secondary actions. */
+:is(#main,.entry-content) h2{font-family:Inter,Arial,sans-serif!important;font-size:30px!important;font-weight:500!important;line-height:1.25!important;letter-spacing:-.02em!important}
+:is(#main,.entry-content) h3{font-family:Inter,Arial,sans-serif!important;font-size:22px!important;font-weight:500!important;line-height:1.35!important;letter-spacing:-.01em!important}
+:is(#main,.entry-content) p{line-height:1.7!important}
+:is(#main,.entry-content) figcaption{font:400 13px/1.6 Inter,Arial,sans-serif!important;color:#010133!important;margin-top:12px!important;text-align:left!important}
+:is(#main,.entry-content) a:not(.button):not(.wp-block-button__link):not(.kb-advanced-image-link):not(:has(img)){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+:is(#main,.entry-content) a:focus-visible{outline:3px solid #fdb515;outline-offset:5px}
+@media(max-width:760px){:is(#main,.entry-content) h2{font-size:27px!important}:is(#main,.entry-content) h3{font-size:21px!important}}
+
+/* Group the motif with the introduction instead of pushing it to the far edge. */
+.hero-inner{display:grid!important;grid-template-columns:minmax(0,730px) minmax(240px,320px);justify-content:start!important;align-items:center!important;column-gap:clamp(40px,5vw,80px)!important}
+.hero-copy{max-width:730px!important;min-width:0}
+.hero .hero-description{max-width:60ch}
+.population-art{position:static!important;width:100%!important;margin:0!important;gap:30px!important;justify-self:start;align-self:center}
+.pyramid i{height:21px!important;opacity:.43!important}
+#main .section{padding-top:48px!important;padding-bottom:48px!important}
+#main .section-heading{margin-bottom:28px!important}
+#main .intro-photo{padding-top:48px!important;padding-bottom:48px!important}
+#main .course h3{font-size:19px!important}
+#main .elective-panel{background:white!important;border:0!important;border-left:1px solid #d5d5d5!important;padding:0 0 0 32px!important}
+#main .requirements-summary>div{border-bottom:1px solid #f2f2f2!important}
+#main .advising{background:white!important;border-top:1px solid #d5d5d5!important}
+#main .advising .button{background:transparent!important;border:0!important;border-radius:0!important;min-height:44px;padding:10px 0!important;color:#002676!important;text-decoration:underline!important;text-underline-offset:5px;font-weight:500!important}
+#main .advising .button:hover{color:#004aae!important}
+#main .hero .button{background:#fdb515!important;color:#010133!important}
+#main .hero .text-link{color:white!important}
+#main .advising-inner{padding-top:48px!important;padding-bottom:48px!important}
+@media(max-width:1050px){.hero-inner{grid-template-columns:minmax(0,1fr) 240px;column-gap:32px!important}.pyramid i{height:18px!important}}
+@media(max-width:760px){.hero-inner{display:block!important}.population-art{width:180px!important;margin:28px 0 0!important}.pyramid i{height:13px!important}#main .elective-panel{border-left:0!important;border-top:1px solid #d5d5d5!important;padding:24px 0 0!important}#main .section,#main .advising-inner{padding-top:36px!important;padding-bottom:36px!important}#main .intro-photo{padding-top:36px!important;padding-bottom:36px!important}}

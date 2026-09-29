@@ -1,0 +1,31 @@
+/* Typography and color overrides only; original page content and layout retained. */
+:root{--berkeley-blue:#002676;--berkeley-gold:#fdb515;--berkeley-dark:#010133;--berkeley-light:#f2f2f2}
+body,button,input,select,textarea{font-family:Inter,Arial,sans-serif!important;color:#010133}
+h1,h2,h3,h4,h5,h6,.entry-title,.site-title,.main-navigation,.menu{font-family:Inter,Arial,sans-serif!important}
+h1,h2,h3,h4,h5,h6,.entry-title{color:#002676!important}
+a{color:#002676}a:hover,a:focus{color:#004aae}
+.site-header{background-color:#fff!important;color:#002676!important}
+.site-footer{background-color:#002676!important;color:white!important}
+.site-footer a,.site-footer p,.site-footer h2,.site-footer h3{color:white!important}
+button,input[type=button],input[type=submit],.wp-block-button__link{background-color:#002676!important;color:#fff!important;border-color:#002676!important}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #fdb515;outline-offset:3px}
+::selection{background:#fdb515;color:#010133}
+.entry-content,.entry-content p,.entry-content li,.entry-content td,.entry-content th,.entry-content span,.entry-content a,.entry-content div{font-family:Inter,Arial,sans-serif!important}
+.entry-content p,.entry-content li,.entry-content td{color:#010133}
+.entry-content a{color:#002676!important}
+.main-navigation a{color:#002676!important}
+.main-navigation ul ul{background-color:#f2f2f2!important}
+.rmp-container,.rmp-menu-title,.rmp-menu-item-link{background-color:#002676!important;color:#fff!important}
+
+/* Override inherited plugin typography without changing icon fonts or page geometry. */
+body :is(p,li,dt,dd,td,th,caption,figcaption,label,input,textarea,select,button,blockquote,summary),
+body :is(h1,h2,h3,h4,h5,h6),body a,body span:not([class*="icon"]):not([class*="dashicons"]){font-family:Inter,Arial,sans-serif!important}
+body{color:#010133!important;background-color:#fff!important}
+#content :is(p,li,dt,dd,td,th,blockquote),.entry-content{color:#010133}
+:root{--wp--preset--color--kb-palette-2:#002676;--wp--preset--color--kb-palette-3:#010133;--wp--preset--color--kb-palette-4:#010133;--wp--preset--color--kb-palette-5:#010133;--wp--preset--color--kb-palette-6:#010133;--wp--preset--color--kb-palette-7:#010133;--wp--preset--color--kb-palette-8:#808080;--wp--preset--color--kb-palette-9:#f2f2f2;--wp--preset--color--kb-palette-10:#fff;--wp--preset--color--kb-palette-11:#004aae}
+.site-footer,.site-footer .has-kb-palette-2-background-color{background-color:#002676!important}
+.site-footer :is(p,span,a,h1,h2,h3,h4,li){color:#fff!important}
+.site-footer .kb-row-layout-wrap{border-top-color:#fdb515!important}
+.site-header,.site-header .hcont{background-color:#fff!important}
+.site-header a{color:#002676!important}
+.rmp-container :is(a,span,p,li){color:#fff!important}
