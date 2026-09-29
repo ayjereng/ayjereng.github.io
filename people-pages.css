@@ -1,0 +1,50 @@
+.people-page-hero{
+  position:relative;
+  overflow:hidden;
+  background:#002676;
+  color:#fff;
+}
+.people-page-hero::after{
+  content:"";
+  position:absolute;
+  right:6.5%;
+  bottom:0;
+  width:clamp(140px,22vw,330px);
+  height:10px;
+  background:#fdb515;
+}
+.people-page-wrap{
+  width:min(1200px,calc(100% - 96px));
+  margin:0 auto;
+  padding:clamp(52px,6vw,78px) 0;
+}
+.people-page-hero h1{
+  max-width:980px;
+  margin:0;
+  color:#fff!important;
+  font:500 clamp(38px,4.2vw,58px)/1.12 Inter,Arial,sans-serif!important;
+  letter-spacing:-.035em;
+  text-align:left!important;
+}
+.people-directory-page .entry-content{
+  padding-top:clamp(48px,6vw,76px);
+}
+.people-directory-page .entry-content>.wp-block-spacer:first-child{
+  display:none;
+}
+.people-directory-page .teamlistz,
+.people-directory-page .entry-content>h3,
+.people-directory-page .entry-content>p{
+  width:min(1200px,calc(100% - 96px));
+  margin-left:auto;
+  margin-right:auto;
+}
+@media(max-width:760px){
+  .people-page-wrap,
+  .people-directory-page .teamlistz,
+  .people-directory-page .entry-content>h3,
+  .people-directory-page .entry-content>p{
+    width:calc(100% - 40px);
+  }
+  .people-directory-page .entry-content{padding-top:38px}
+}
