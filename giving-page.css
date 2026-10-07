@@ -1,0 +1,153 @@
+#post-908 .entry-content{
+ padding-top:48px!important;
+ padding-bottom:80px!important;
+ color:#010133;
+}
+#post-908 .entry-content>p:empty{
+ display:none;
+}
+#post-908 .giving-title{
+ margin:0 0 44px;
+ padding:34px clamp(28px,4vw,60px);
+ background:#002676;
+}
+#post-908 .giving-title h1{
+ margin:0!important;
+ color:#fff!important;
+ font:500 clamp(34px,4vw,54px)/1.12 Inter,Arial,sans-serif!important;
+ letter-spacing:-.035em;
+}
+#post-908 .giving-annual{
+ display:grid;
+ grid-template-columns:minmax(0,1fr) 330px;
+ gap:clamp(48px,7vw,100px);
+ align-items:center;
+ padding:42px 0 66px;
+}
+#post-908 .giving-annual>p{
+ max-width:860px!important;
+ margin:0!important;
+ color:#002676;
+ font-size:clamp(23px,2.25vw,31px)!important;
+ font-weight:500;
+ line-height:1.5!important;
+}
+#post-908 .giving-card{
+ width:100%!important;
+ height:auto!important;
+ overflow:hidden;
+ border:1px solid rgba(0,38,118,.18);
+ border-radius:0!important;
+ background:#f2f2f2!important;
+ box-shadow:0 15px 30px rgba(0,38,118,.08);
+ text-align:center;
+}
+#post-908 .giving-card>div:first-child{
+ display:flex;
+ height:145px!important;
+ align-items:center;
+ justify-content:center;
+ padding:26px;
+}
+#post-908 .giving-card>div:first-child p{
+ position:static!important;
+ margin:0!important;
+ padding:0!important;
+ color:#002676!important;
+ font:600 24px/1.3 Inter,Arial,sans-serif!important;
+}
+#post-908 .giving-card>div:last-child p{
+ margin:0!important;
+ padding:0!important;
+}
+#post-908 .giving-card a{
+ display:flex!important;
+ width:100%!important;
+ height:auto!important;
+ min-height:62px;
+ align-items:center;
+ justify-content:center;
+ border-radius:0!important;
+ background:#fdb515!important;
+ color:#010133!important;
+ font:700 15px/1.3 Inter,Arial,sans-serif!important;
+ letter-spacing:.03em;
+ text-transform:uppercase;
+}
+#post-908 .giving-card a:hover,
+#post-908 .giving-card a:focus-visible{
+ background:#ffca36!important;
+ color:#010133!important;
+}
+#post-908 .wpel-icon{
+ display:none!important;
+}
+#post-908 .giving-circle{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:24px 48px;
+ margin:0 calc(50% - 50vw);
+ padding:68px max(6.5vw,calc((100vw - 1600px)/2));
+ background:#f2f2f2;
+}
+#post-908 .giving-circle h2{
+ grid-column:1/-1;
+ margin:0 0 10px!important;
+ color:#002676!important;
+ font-size:clamp(30px,3vw,42px)!important;
+}
+#post-908 .giving-circle p{
+ max-width:none!important;
+ margin:0!important;
+ padding:28px 30px;
+ border-top:5px solid #fdb515;
+ background:#fff;
+}
+#post-908 .giving-planning{
+ display:grid;
+ grid-template-columns:minmax(240px,.42fr) minmax(0,1fr);
+ gap:18px 56px;
+ margin-top:70px;
+ padding:44px 48px;
+ border-left:7px solid #fdb515;
+ background:#eef4fb;
+}
+#post-908 .giving-planning-title{
+ grid-column:1;
+ grid-row:1/4;
+ margin:0!important;
+ color:#002676;
+ font:500 clamp(30px,3vw,42px)/1.2 Inter,Arial,sans-serif!important;
+}
+#post-908 .giving-planning p:not(.giving-planning-title){
+ grid-column:2;
+ max-width:none!important;
+ margin:0!important;
+}
+#post-908 .giving-planning p strong{
+ color:#002676;
+ font-size:20px;
+ line-height:1.55;
+}
+@media(max-width:850px){
+ #post-908 .giving-annual,
+ #post-908 .giving-circle,
+ #post-908 .giving-planning{
+  grid-template-columns:1fr;
+ }
+ #post-908 .giving-card{max-width:420px}
+ #post-908 .giving-circle h2,
+ #post-908 .giving-planning-title,
+ #post-908 .giving-planning p:not(.giving-planning-title){
+  grid-column:1;
+  grid-row:auto;
+ }
+}
+@media(max-width:650px){
+ #post-908 .entry-content{padding-top:28px!important;padding-bottom:48px!important}
+ #post-908 .giving-title{margin-bottom:24px;padding:26px 24px}
+ #post-908 .giving-annual{gap:32px;padding:28px 0 48px}
+ #post-908 .giving-circle{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding:48px 20px}
+ #post-908 .giving-circle p{padding:24px}
+ #post-908 .giving-planning{margin-top:48px;padding:30px 24px}
+}
